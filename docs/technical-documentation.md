@@ -30,6 +30,15 @@ assignment-4/
 - **Contact**
 - **Footer**
 
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- ZenQuotes API for inspirational quotes
+- GitHub API for project list
+- LocalStorage for theme, filters, and user data
+- GitHub Pages for deployment
+
 ## Key Components
 
 ### 1) Dynamic Content
