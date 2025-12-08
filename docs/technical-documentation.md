@@ -2,18 +2,23 @@
 
 ## Project Structure
 ```
-assignment-3/
-├── index.html       Main HTML file
+assignment-4/
+├── index.html
 ├── css/
-│   └── styles.css   Styling rules
+│   └── styles.css
 ├── js/
-│   └── script.js    Interactivity
+│   └── script.js
 ├── assets/
-│   └── images       Images
+│   └── images
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
-└── README.md
+├── Presentation/
+│   ├── slides.pdf
+│   └── demo-video.mp4
+├── README.md
+└── .gitignore
+
 ```
 
 ## Sections

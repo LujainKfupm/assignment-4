@@ -1,13 +1,12 @@
-# Personal Portfolio — Assignment 3
+# Personal Portfolio — Assignment 4
 
 ## 📖 Project Description
-This is my personal portfolio website for **SWE363 – Web Engineering**, developed across Assignments 1, 2, and 3.
-The goal of Assignment 3 was to add **advanced functionality**, integrate an **external API**, and use **state management**.
+This is my personal portfolio website for SWE363, developed across Assignments 1, 2, and 3. The goal of Assignment 4 to bring everything together into a polished, professional project that demonstrates my full range of skills
 
 ## 🚀 Setup
 1. Clone this repository:
    ```bash
-   git clone https://github.com/LujainKfupm/assignment-3.git
+   git clone https://github.com/LujainKfupm/assignment-4.git
    ```
 2. Open the project in the code editor.
 3. Open `index.html` in your browser.
@@ -16,12 +15,12 @@ The goal of Assignment 3 was to add **advanced functionality**, integrate an **e
 
 or visit deployed page 
 ```
-https://lujainkfupm.github.io/assignment-3/
+https://lujainkfupm.github.io/assignment-4/
 ```
 
 ## 📂 Structure
 ```
-assignment-3/
+assignment-4/
 ├── index.html
 ├── css/
 │   └── styles.css
@@ -32,7 +31,11 @@ assignment-3/
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
-└── README.md
+├── Presentation/
+│   ├── slides.pdf
+│   └── demo-video.mp4
+├── README.md
+└── .gitignore
 ```
 
 ## ✨ Features
