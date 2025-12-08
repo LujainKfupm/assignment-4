@@ -259,8 +259,8 @@
                 textEl.textContent = '“' + data[0].q + '”';
                 authorEl.textContent = '— ' + data[0].a;
             } catch (err) {
-                textEl.textContent = 'Could not load quote.';
-                authorEl.textContent = '';
+                textEl.textContent = '“The best time to start is now.”';
+                authorEl.textContent = '— Unknown (offline mode)';
             } finally {
                 card.classList.add('show');
             }
