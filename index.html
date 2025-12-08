@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lujain Aljehani's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" /> <!--CSS link-->
+</head>
+<body>
+
+<!--header section-->
+<header class="header">
+    <nav class="nav">
+        <a class="nav_brand" href="#home">
+            <span class="logo">⚡</span>
+            <span class="brand-text">Lujain Aljehani</span>
+        </a>
+        <ul class="nav_menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="theme-toggle" type="button">🌗</button></li>
+        </ul>
+    </nav>
+</header>
+
+<!--hero section-->
+<main id="main">
+    <section id="home" class="section hero">
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <p id="greeting" class="small"></p>
+
+                <h1>I’m <span class="highlight">Lujain!</span></h1>
+
+                <p class="tagline">
+                    I'm a <strong>Computer Science</strong> student at KFUPM, sharing some of my projects here.
+                </p>
+                <p class="intro">
+                    I keep things simple. This site is just a small place to collect my projects.
+                </p>
+
+                <a class="btn" href="#projects">See my work</a>
+
+                <button id="edit-name-btn" class="small-link" hidden>Edit name</button>
+
+                <div class="name-input">
+                    <label for="visitor-name">Your name:</label>
+                    <input id="visitor-name" type="text" placeholder="Enter your name" />
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="quote_card" id="quote">
+                    <h3 class="quote_heading">Today’s inspiring quote</h3>
+                    <p id="t3-quote" class="quote_text">Loading quote…</p>
+                    <p id="t3-author" class="quote_author"></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--about me section-->
+    <section id="about" class="section about">
+        <div class="container grid">
+            <div>
+                <h2>About Me</h2>
+                <p>I'm Lujain, a Computer Science student at KFUPM with an interest in technology and problem-solving. I enjoy learning through projects, and this is a place to share some of my work.</p>
+                <p class="one-liner">I'm still figuring out where I fit in tech.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--project section-->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- simple filter -->
+            <div class="filter" role="group">
+                <button class="btn chip" data-filter="all">All</button>
+                <button class="btn chip" data-filter="hardware">Hardware</button>
+                <button class="btn chip" data-filter="ml">ML</button>
+            </div>
+
+            <div class="projects-controls">
+                <input
+                        id="project-search"
+                        type="search"
+                        placeholder="Search projects..."
+                        class="search-input"
+                />
+
+                <select id="sort-projects" class="search-input sort-select">
+                    <option value="default">Sort</option>
+                    <option value="newest">Newest first</option>
+                    <option value="oldest">Oldest first</option>
+                </select>
+            </div>
+
+            <p class="empty" id="empty-projects" hidden>No projects found.</p>
+
+
+            <div class="cards" id="project-cards">
+                <article class="card" data-category="hardware" data-year="2024" >
+                    <img class="card_img" src="assets/project-1-placeholder.jpg" alt="Screenshot placeholder of Project 1" loading="lazy"/>
+                    <div class="card_body">
+                        <h3>Pipelined MIPS CPU</h3>
+                        <p>Designed a 16-bit pipelined processor supporting R-type, I-type, and J-type instructions.</p>
+                    </div>
+                </article>
+
+                <article class="card" data-category="ml" data-year="2023">
+                    <img class="card_img" src="assets/project-2-placeholder.jpg" alt="Screenshot placeholder of Project 2" loading="lazy"/>
+                    <div class="card_body">
+                        <h3>User Behavior Classification</h3>
+                        <p>A machine learning project that classifies smartphone usage patterns to explore their relationship with student performance and well-being.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="repo-section">
+                <div class="repo-header">
+                    <h3>Latest GitHub repositories</h3>
+                    <a
+                            href="https://github.com/LujainKfupm"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="small-link"
+                    >
+                        View profile →
+                    </a>
+                </div>
+
+                <ul id="github-repos" class="repo-list">
+                    <li class="small">Loading repositories…</li>
+                </ul>
+
+                <p id="github-error" class="field_error" hidden>
+                    Could not load GitHub repositories right now.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="contact-form" action="#" method="post" novalidate>
+                <div class="form_row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required />
+                    <p class="field_error" id="name-error" hidden>Name is required.</p>
+                </div>
+                <div class="form_row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                    <p class="field_error" id="email-error" hidden>Enter a valid email.</p>
+                </div>
+                <div class="form_row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    <p class="field_error" id="message-error" hidden>Message is required.</p>
+                </div>
+                <div class="form_actions">
+                    <button class="btn" type="submit">Send</button>
+                </div>
+                <p class="success" id="form-success" hidden>Thanks! Your message was sent.</p>
+            </form>
+        </div>
+    </section>
+</main>
+<!--footer section-->
+<footer class="footer">
+    <div class="container">
+        <p>© <span id="year">2025</span> Lujain Aljehani. All rights reserved.</p>
+        <p class="small">Built with HTML, CSS, and JavaScript with AI Assistance.</p>
+    </div>
+</footer>
+
+<!--script link-->
+<script src="js/script.js" defer></script>
+</body>
+</html>
