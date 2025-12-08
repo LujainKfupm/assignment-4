@@ -2,7 +2,7 @@
 
 ## 🔧 Tools Used
 - **ChatGPT**: Used for coding, help with documentation, and providing general suggestions.
-- **Junie**: Used for live time Assistance in the IDE.
+- **WebStorm AI Assistant**: Used for live time Assistance in the IDE.
 - **Gemini**: Used for suggesting creative styles to the page.
 
 ## 🎯 General Use Cases
@@ -24,7 +24,7 @@
 
 - ### GitHub API Integration
   - **Prompt:** Asked how to fix the repos looking awkward and unformatted.
-  - **AI Output:** Suggested styles for the repo list myself
+  - **AI Output:** Suggested styles for the repo list.
   - **My Edits:** Added hover effect and changed some styles.
 
 - ### Mobile Header Fix
